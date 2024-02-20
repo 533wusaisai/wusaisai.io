@@ -168,11 +168,7 @@ export const sidebar = () => {
       ]
     },
     {
-      text: 'Bugs',
-      collapsed: false,
-      items: [
-        { text: 'bugs', link: '/bug/' },
-      ]
+      text: 'Bugs', link: '/bug/'
     },
   ]
 }
