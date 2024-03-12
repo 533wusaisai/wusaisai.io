@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./chunks/framework.4ft2TBN7.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/ui/vant.md","filePath":"guide/ui/vant.md","lastUpdated":1710243407000}'),n={name:"guide/ui/vant.md"};function r(o,s,i,c,d,p){return a(),e("div")}const m=t(n,[["render",r]]);export{u as __pageData,m as default};
