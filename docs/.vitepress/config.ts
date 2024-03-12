@@ -73,5 +73,9 @@ export default defineConfig({
       pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页面'
     },
+  },
+
+  markdown: {
+    lineNumbers: true,
   }
 })
