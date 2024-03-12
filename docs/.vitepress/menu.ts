@@ -93,6 +93,10 @@ export const sidebar = () => {
       collapsed: true,
       items: [
         {
+          text: "React组件库搭建",
+          link: `${componentUI}/dumi`
+        },
+        {
           text: "Antd",
           link: `${componentUI}/antd`
         },
