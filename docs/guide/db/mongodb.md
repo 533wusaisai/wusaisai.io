@@ -36,6 +36,10 @@ sudo systemctl status mongod
 ```js
 sudo systemctl enable mongod
 ```
+8. 停止 MongoDB 服务：
+```js
+sudo systemctl stop mongod
+```
 
 ### CentOS安装
 
@@ -74,6 +78,10 @@ sudo systemctl enable mongod
   - 检查MongoDB服务的状态：
 
   `sudo systemctl status mongod`
+
+   - 停止MongoDB服务：
+
+  `sudo systemctl stop mongod`
 
   ::: info 调整防火墙设置（如果需要）：
   如果你的服务器运行了防火墙，并且你需要从外部访问MongoDB，你需要打开27017端口（MongoDB的默认端口）
@@ -170,20 +178,41 @@ mongo
 ::: info 注意
  数据库增加访问限制，以免在云服务器上受到攻击，设定特定账号访问并添加对应权限
 :::
-
+  0. 切换到admin添加角色
+  ```js
+  <!-- 进入mongodb服务 -->
+  mongosh
+  
+  use admin
+  //
+  db.getUsers()
+  // 登录
+  db.auth('existingAdminUser', 'existingAdminPassword')
+  ```
   1. 创建用户名密码
 
   ```js
+  // 如果没有角色 创建
   db.createUser({
     user: "adminUser",   // 用户名
     pwd: "adminPassword", // 密码
     roles: [{ role: "userAdminAnyDatabase", db: "admin" }]  // 库 角色
   });
-
-  db.auth('existingAdminUser', 'existingAdminPassword')
+  // 更新
+  db.updateUser("admin",{
+    $set:{
+      roles:[
+        {role:"",db:"admin"}
+      ]
+    }
+  })
+  // 撤销
+  db.revokeRolesFromUser("admin",[{role:"",db:"admin"}])
   /**
    * @param {'readAnyDatabase', 'dbAdminAnyDatabase', 'userAdminAnyDatabase'}  角色
    */
+
+   // 给admin 添加角色权限
   db.grantRolesToUser('yourUsername', [{ role: 'readAnyDatabase', db: 'admin' }])  // 为 { yourUsername: 用户名 } 数据库增加 角色
 
   ```

@@ -1,3 +1,4 @@
+import { text } from "stream/consumers"
 
 const pkg = require('../../package.json')
 
@@ -26,6 +27,11 @@ const bugs = "/guide/bugs"
 
 export const sidebar = () => { 
   return [
+    {
+      text: "面试",
+      collapsed: true,
+      link: "/guide/offer/1.md"
+    },
     {
       text: '基础',
       collapsed: false,
