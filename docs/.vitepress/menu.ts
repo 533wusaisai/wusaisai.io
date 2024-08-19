@@ -165,6 +165,7 @@ export const sidebar = () => {
       text: '数据库',
       collapsed: true,
       items: [
+        { text: '数据库对比', link: `${db}/database` },
         { text: 'MongoDB', link: `${db}/mongodb` },
         { text: 'MySQL', link: `${db}/mysql` },
         { text: 'Redis', link: `${db}/redis` },
@@ -172,9 +173,10 @@ export const sidebar = () => {
     },
     {
       text: '云服务器',
-      collapsed: false,
+      collapsed: true,
       items: [
-        { text: '相关配置', link: '/guide/server/setting' },
+        { text: 'CentOS', link: '/guide/server/centos' },
+        { text: 'uBuntu', link: '/guide/server/ubuntu' },
       ]
     },
     {
