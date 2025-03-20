@@ -1,11 +1,34 @@
 import { defineConfig } from 'vitepress'
 // import { createRequire } from 'module'
-import { nav, sidebar} from './menu'
+import {sidebar,navigation} from './theme/menu.json'
 
+// import vue from '@vitejs/plugin-vue';
 // https://vitepress.dev/reference/site-config
-// const require = createRequire(import.meta.url)
+
 
 export default defineConfig({
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag.startsWith('My')
+      }
+    }
+  },
+  vite: {
+    // plugins: [vue()],
+    css: {
+      preprocessorOptions: {
+        less: {
+          modifyVars: {
+            'primary-color': '#3eaf7c', // 匹配VitePress主题色
+            'border-radius-base': '4px'
+          },
+          javascriptEnabled: true
+        }
+      }
+    }
+  },
+ 
   title: "前端公开课",
   description: "爱折腾 | 全栈开发者 | 热爱开发",
   base: "/",
@@ -45,8 +68,8 @@ export default defineConfig({
       code: 'CEBDT27Y',
       placement: 'vuejsorg'
     },
-    nav: nav(),
-    sidebar: sidebar(),
+    nav: navigation,
+    sidebar:  sidebar,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/533wusaisai/wss' }
     ],
