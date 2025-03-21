@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./chunks/framework.CFiOP5Vi.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/web/ui/vant.md","filePath":"src/web/ui/vant.md","lastUpdated":1742543994000}'),r={name:"src/web/ui/vant.md"};function s(n,c,o,i,d,p){return a(),e("div")}const f=t(r,[["render",s]]);export{m as __pageData,f as default};

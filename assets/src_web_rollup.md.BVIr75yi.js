@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./chunks/framework.CFiOP5Vi.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/web/rollup.md","filePath":"src/web/rollup.md","lastUpdated":1742543994000}'),a={name:"src/web/rollup.md"};function o(s,c,l,p,n,d){return r(),t("div")}const m=e(a,[["render",o]]);export{i as __pageData,m as default};

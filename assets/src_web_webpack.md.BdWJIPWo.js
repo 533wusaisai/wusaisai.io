@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.CFiOP5Vi.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/web/webpack.md","filePath":"src/web/webpack.md","lastUpdated":1742543994000}'),c={name:"src/web/webpack.md"};function r(s,o,p,n,d,_){return a(),t("div")}const f=e(c,[["render",r]]);export{m as __pageData,f as default};

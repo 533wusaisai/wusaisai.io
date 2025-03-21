@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.CFiOP5Vi.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/web/vite.md","filePath":"src/web/vite.md","lastUpdated":1742543994000}'),r={name:"src/web/vite.md"};function s(c,o,n,i,d,p){return a(),t("div")}const f=e(r,[["render",s]]);export{m as __pageData,f as default};
