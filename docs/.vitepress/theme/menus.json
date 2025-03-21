@@ -1,0 +1,123 @@
+{
+  "navigation":[
+    { 
+      "text": "首页", 
+      "link":"/" 
+    },
+    {
+      "text": "",
+      "items": [
+        {
+          "text": "更新日志",
+          "link": "https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md"
+        }
+      ]
+    }
+  ],
+  "sidebar":[
+    {
+      "text": "Markdown文件添加",
+      "collapsed": false,
+      "link": "/src/markdown/README.md"
+    },
+    {
+      "text": "实用插件列表",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "web",
+          "link": "/src/plugins/web.md"
+        },
+        {
+          "text": "node",
+          "link": "/src/plugins/node.md"
+        }
+      ]
+    },
+    {
+      "text": "前端知识库",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "vue",
+          "collapsed": true,
+          "items": [
+            {
+              "text": "项目搭建",
+              "link": "/src/web/vue/README.md"
+            },
+            {
+              "text": "组件库搭建",
+              "link": "/src/web/vue/library.md"
+            },
+            {
+              "text": "知识库",
+              "link": "/src/web/vue/learning.md"
+            }
+          ]
+        },
+        {
+          "text": "react",
+          "collapsed": true,
+          "items": [
+            {
+              "text": "项目搭建",
+              "link": "/src/web/react/README.md"
+            },
+            {
+              "text": "组件库搭建",
+              "link": "/src/web/react/library.md"
+            },
+            {
+              "text": "知识库",
+               "link": "/src/web/react/learning.md"
+            }
+          ]
+        },
+        {
+          "text": "webpack构建",
+          "link": "/src/web/webpack.md"
+        },
+        {
+          "text": "vite构建",
+          "link": "/src/web/vite.md"
+        },
+        {
+          "text": "rollup构建",
+          "link": "/src/web/rollup.md"
+        }
+      ]
+    },
+    {
+      "text": "后端知识库",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "fastify",
+          "link": "/src/server/fastify/README.md"
+        },
+        {
+          "text": "koa",
+          "link": "/src/server/koa/README.md"
+        }
+      ]
+    },
+    {
+      "text": "性能优化"
+    },
+    {
+      "text": "工具",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "埋点SDK",
+          "link": "/src/tool/sdk/README.md"
+        },
+        {
+          "text": "项目脚手架",
+          "link": "/src/tool/wsscli/README.md"
+        }
+      ]
+    }
+  ]
+}

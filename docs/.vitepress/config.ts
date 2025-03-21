@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 // import { createRequire } from 'module'
-import menuData from './theme/menu.json'
+import menuData from './theme/menus.json'
 const { sidebar, navigation } = menuData
 // import vue from '@vitejs/plugin-vue';
 // https://vitepress.dev/reference/site-config
