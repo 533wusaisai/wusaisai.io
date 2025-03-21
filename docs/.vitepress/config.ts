@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 // import { createRequire } from 'module'
-import { sidebar, navigation } from './theme/menu.js'
+import { sidebar, navigation } from './path.js'
 // import vue from '@vitejs/plugin-vue';
 // https://vitepress.dev/reference/site-config
 
