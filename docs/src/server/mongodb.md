@@ -138,7 +138,7 @@ mongo
 ```
 
 ## mongodb 使用
-[Node项目安装及使用](/guide/node/koa/数据库连接.md)
+<!-- [Node项目安装及使用](/guide/node/koa/数据库连接.md) -->
 
 在 MongoDB Shell 中，你可以执行各种命令，例如：
 

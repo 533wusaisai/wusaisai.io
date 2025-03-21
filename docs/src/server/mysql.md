@@ -59,7 +59,7 @@ mysql_secure_installation
 - 下载并运行安装程序，按照向导指示完成安装。
 
 ## 使用 MySQL
-[Node项目安装及使用](/guide/node/koa/数据库连接.md)
+<!-- [Node项目安装及使用](/guide/node/koa/数据库连接.md) -->
 
 > 安装完成后，你可以使用 MySQL 命令行客户端连接到数据库并开始使用。
 
